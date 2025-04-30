@@ -60,7 +60,7 @@ Make sure to set the correct parameters similar to training.
 If you use this codebase in academic work, please cite:
 
 ```
-@misc{recsysfm2025,
+@misc{recsysswt2025,
   title   = {RecSysSWT},
   author  = {Anonymous},
   year    = {2025},
