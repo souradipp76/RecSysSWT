@@ -89,7 +89,7 @@ class InteractionDataset(Dataset):
     def __init__(self, data_path, mode="control", window_size=100, max_history=None, sliding_stride=1):
         colnames = ["user_id", "item_id", "category_id", "interaction_type", "timestamp"]
         # Read the CSV file with specified column names
-        self.df = pd.read_csv(data_path, names=colnames, header=None, nrows=10000)
+        self.df = pd.read_csv(data_path, names=colnames, header=None)
         self.df.sort_values(["user_id", "timestamp"], inplace=True)
         print(len(self.df))
         # **Step 1: Compute item interaction frequency**
@@ -318,7 +318,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     colnames = ["user_id", "item_id", "category_id", "interaction_type", "timestamp"]
-    df = pd.read_csv(data_path, names=colnames, header=None, nrows=10000)
+    df = pd.read_csv(data_path, names=colnames, header=None)
     
     # **Step 1: Compute item interaction frequency**
     item_counts = df["item_id"].value_counts()

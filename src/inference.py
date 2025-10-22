@@ -21,7 +21,7 @@ event_MAPPING = {
 class InteractionDataset(Dataset):
     def __init__(self, data_path, mode="control", window_size=100, max_history=None, sliding_stride=1):
         # Assumes CSV has columns: visitorid, itemid, event, timestamp, transactionid
-        self.df = pd.read_csv(data_path, nrows = 1000)
+        self.df = pd.read_csv(data_path)
         self.df.sort_values(["visitorid", "timestamp"], inplace=True)
         
         # Build sequences per user as (items, events)
@@ -215,7 +215,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Load CSV to determine number of items
-    df = pd.read_csv(data_path, nrows = 1000)
+    df = pd.read_csv(data_path)
     num_items = df["itemid"].max() + 1
 
     # Create dataset and dataloader
