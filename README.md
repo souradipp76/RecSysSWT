@@ -1,6 +1,6 @@
 # Sliding Window Training(SWT) for RecSys Foundation Models
 
-This repository contains the code to reproduce the experiments of the paper "Is Sliding Window All You Need? Reproducing Industrial-Scale Long-Sequence Training for Recommender Systems".
+This repository contains the code to reproduce the experiments of the paper "Is Sliding Window All You Need? An Open Framework for Long-Sequence Recommendation".
 
 ## Installation
 
