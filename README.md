@@ -60,11 +60,14 @@ Make sure to set the correct parameters similar to training.
 If you use this codebase in academic work, please cite:
 
 ```
-@misc{recsysswt2025,
-  title   = {RecSysSWT},
-  author  = {Anonymous},
-  year    = {2025},
-  howpublished = {\url{https://github.com/anonymous/RecSysSWT}}
+@misc{chakrabarty2026slidingwindowneedopen,
+      title={Is Sliding Window All You Need? An Open Framework for Long-Sequence Recommendation}, 
+      author={Sayak Chakrabarty and Souradip Pal},
+      year={2026},
+      eprint={2604.12372},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2604.12372}, 
 }
 ```
 
